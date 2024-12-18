@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: lightgreen;
+
+        }
+        h1{
+            background-color: green;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: x-large;
+            font-weight: bold;
+            color: bisque;
+            text-shadow: 2px 3px 4px black;
+            width:300px;
+        }
+        p{
+            background-color: cadetblue;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: large;
+            font-weight: 900;
+            color: darkorchid;
+            text-shadow: 3px 3px 4px beige;
+        }
+        #para{
+            width:660px;
+        }
+        #p2{
+            width:550px;
+        }
+        #p3{
+            width:120px;
+        }
+        #p4{
+            width:450px;
+        }
+        #p5{
+            width:30px;
+        }
+    </style>
+</head>
+<body>
+   <center> <h1>JAVASCRIPT ARRAYS</h1>
+    <p id="para"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+    <p id="p5"></p>
+    <script>
+        var cars=["mclaren","mercedez","ferrari","lamborghini","bugatti","audi","rollsroyce"];
+        document.getElementById("para").innerHTML=cars.join(" & ");
+        document.getElementById('p2').innerHTML=cars;cars.pop();
+        document.getElementById('p3').innerHTML=cars[3];
+        document.getElementById('p4').innerHTML=cars;
+
+        function add(a,b){
+            return a+b;
+        }
+        function average(a,b){
+            return add(a,b)/2;
+        }
+        let result=average(32,32);
+        document.getElementById("p5").innerHTML=result;
+    </script></center>
+</body>
+</html>
